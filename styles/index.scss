@@ -55,7 +55,7 @@ body {
   border-radius: 50%;
   background: radial-gradient(circle at 30% 30%, rgba(255, 230, 140, 0.7), rgba(210, 170, 60, 0.2));
   animation: rise linear infinite;
-  bottom: -20px;
+  bottom: auto;
 }
 @keyframes rise {
   0% { transform: translateY(0) scale(1); opacity: 0; }
@@ -216,7 +216,7 @@ body {
 
 .detail-value {
   font-family: $font-accent;
-  font-size: clamp(18px, 4.2vw, 22px);
+  font-size: clamp(16px, 4.2vw, 22px);
   color: $text-white;
   text-decoration: none;
   display: block;

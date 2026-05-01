@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
   border-radius: 50%;
   background: radial-gradient(circle at 30% 30%, rgba(255, 230, 140, 0.7), rgba(210, 170, 60, 0.2));
   animation: rise linear infinite;
-  bottom: -20px;
+  bottom: auto;
 }
 
 @keyframes rise {
@@ -227,7 +227,7 @@ body::-webkit-scrollbar {
 
 .detail-value {
   font-family: "Playfair Display", serif;
-  font-size: clamp(18px, 4.2vw, 22px);
+  font-size: clamp(16px, 4.2vw, 22px);
   color: #fcfcfc;
   text-decoration: none;
   display: block;

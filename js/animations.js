@@ -6,21 +6,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const b = document.createElement('div');
         b.className = 'bubble';
         const size = 4 + Math.random() * 8;
+        const y = Math.random() * 100;
+
         b.style.cssText = `
             width: ${size}px;
             height: ${size}px;
             left: ${5 + Math.random() * 90}%;
+            top: ${y}vh;
             --dx: ${(Math.random() - 0.5) * 60}px;
             animation-duration: ${5 + Math.random() * 7}s;
-            animation-delay: ${Math.random() * 6}s;
-            opacity: 0;
-          `;
+        `;
         bubblesEl.appendChild(b);
         setTimeout(() => b.remove(), 14000);
     }
 
-    for (let i = 0; i < 30; i++) setTimeout(makeBubble, i * 300);
-    setInterval(makeBubble, 400);
+    for (let i = 0; i < 30; i++) makeBubble();
+    setInterval(makeBubble, 120);
 
     function makeSparkle() {
         const s = document.createElement('div');
